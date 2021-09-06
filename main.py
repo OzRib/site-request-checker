@@ -6,7 +6,7 @@ ARGS = sys.argv
 req = requests.get(ARGS[1])
 
 while req.status_code != int(ARGS[2]):
-    print('Erro')
+    print('Error. Requesting...')
     req = requests.get(ARGS[1])
 
-print('Tudo ok')
+print('Ok')
